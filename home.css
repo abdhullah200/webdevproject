@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+body {
+  background-color: #E8E8D2;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+}
+
+nav-left{
+  width: 150px;  
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #8B4513;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.nav-links ul li a{
+    color: #1A2237;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li a:hover{
+    color:#8B4513 ;
+}
+
+nav .fa{
+    display: none;
+ 
+}
+
+.account-icon img{
+    width: 35px;
+    
+    
+}
+
+
+
+
+
+.hero{
+    width: 100%;
+
+}
+.hero img{
+    margin-top: 10px;
+    margin-left: 425px;
+    border-radius: 30px;
+    
+}
+.hero h1{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero P{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.volunteer-btn {
+  margin: 0 auto; /* this centers the button */
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #1A2237;
+  width: fit-content;
+  color: #E8E8D2;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+.volunteer-btn:hover{
+  background-color: #8B4513;
+  transition: background-color 0.4s ease 0.1s, transform 0.3s ease 0.1s;
+  
+}
+
+.hunger-section {
+  padding: 60px 80px;
+  color: #1A2237;
+}
+
+.hunger-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hunger-text {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 50px;
+}
+
+.hunger-text h2 {
+  font-size: 32px;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.hunger-text p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    max-width: 800px;
+}
+
+.hunger-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 230px;
+  margin-right: 100px;
+  margin-top: 70px;
+}
+
+.stat-box {
+  padding: 20px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: left;
+  border-left: 5px solid #8B4513;
+  cursor: pointer;
+  position: relative;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-left: 5px solid #D2691E; /* slightly lighter brown */
+}
+
+.stat-box h3 {
+  font-size: 30px;
+  color: #8B4513;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.stat-box:hover h3 {
+  color: #D2691E; /* change heading color on hover */
+}
+
+
+
+.help-section {
+  padding: 60px 80px;
+  background-color: #F8F8F2;
+  text-align: center;
+}
+
+.help-section h2 {
+  font-size: 36px;
+  color: #1A2237;
+  margin-bottom: 40px;
+}
+
+.help-options {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.help-card {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.help-card:hover {
+  transform: translateY(-10px);
+}
+
+.help-icon {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.helpcontent{
+  text-align: left;
+}
+
+.help-card h3 {
+  font-size: 24px;
+  color: #A0522D;
+  margin-bottom: 10px;
+}
+
+.help-card p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #A0522D;
+  margin-bottom: 30px;
+}
+
+.help-btn {
+  background-color: #1A2237;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.help-btn:hover {
+  background-color: #A0522D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button p{
+    color: #E8E8D2;
+    padding: 10px;
+    border: 3px solid;
+    width: fit-content;
+    border-color: #8B4513;
+    background-color: #8B4513;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+
+
