@@ -7,7 +7,7 @@
 
 body{
   background-color: #E8E8D2;
-
+  padding-top: 60px;
 }
 
 
@@ -17,6 +17,15 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: rgba(232,232,210,0.18);
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 nav-left{
