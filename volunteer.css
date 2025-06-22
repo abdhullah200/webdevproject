@@ -1,0 +1,288 @@
+body {
+  background-color: #E8E8D2;
+  color: #1A2237;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 60px;
+}
+
+.wrapper {
+  padding: 80px 40px;
+}
+
+/* Section: Volunteering */
+.volunteer-section h1 {
+  text-align: center;
+  color: #8B4513;
+  margin-bottom: 1rem;
+}
+
+.dropdown {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #8B4513;
+  background-color: #fff;
+  color: #1A2237;
+}
+
+.card-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.vol-card {
+  min-width: 250px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.vol-card:hover {
+  transform: scale(1.03);
+}
+
+.vol-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.vol-card h3 {
+  color: #A0522D;
+  margin-bottom: 0.5rem;
+}
+
+.vol-card button {
+  background-color: #1A2237;
+  color: #E8E8D2;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vol-card button:hover {
+  background-color: #8B4513;
+}
+
+/* Section: Reviews */
+.reviews {
+  margin-top: 4rem;
+}
+
+.reviews h2 {
+  color: #1A2237;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.rating-score {
+  text-align: center;
+  color: #8B4513;
+  margin-bottom: 2rem;
+}
+
+.review-boxes {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review-card {
+  background-color: #fff;
+  border-left: 5px solid #8B4513;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.02);
+  border-left-color: #D2691E;
+}
+
+.review-card h4 {
+  color: #A0522D;
+  margin-bottom: 0.5rem;
+}
+
+.review-card p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+/* Section: Feedback Form */
+.feedback {
+  margin-top: 4rem;
+  background-color: #F8F8F2;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.feedback h2 {
+  text-align: center;
+  color: #1A2237;
+  margin-bottom: 1rem;
+}
+
+.feedback form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback textarea {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.emoji-rating {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.emoji-rating span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #1A2237;
+  color: #E8E8D2;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #8B4513;
+}
+
+.btn-secondary:hover {
+  background-color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #1A2237;
+  color: #E8E8D2;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #D2691E;
+  text-decoration: none;
+}
+
+/* --- NAVIGATION BAR --- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(232,232,210,0.18); 
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.nav-left {
+  width: 150px;  
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li {
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position:
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #8B4513;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.nav-links ul li a {
+  color: #1A2237;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li a:hover {
+  color: #8B4513;
+}
+
+.nav-links ul li a.active {
+  color: #8B4513;
+}
+
+.account-icon img {
+  width: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.account-icon img:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="./Feedback.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left"></div> <!-- Empty left placeholder -->
+    
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./sitemap.html">SITEMAP</a></li>
+        <li><a href="./volunteer.html">VOLUNTEER</a></li>
+        <li><a href="./team.html">TEAM</a></li>
+        <li><a href="./content_ST1.html">CONTENT PAGE</a></li>
+        <li><a href="./Feedback.html">FEEDBACK</a></li>
+      </ul>
+    </div>    <div class="account-icon">
+      <a href="./user.html">
+        <img src="./assets/ic--baseline-account-circle.png" alt="Account Icon">
+      </a>
+    </div>
+  </nav>
+
+	<div class="form-container">
+		<form id="myForm" onsubmit="return confirm('Are you sure you want to submit the form?')">
+			<h1>Leave us a Feedback</h1>
+
+			<!-- For Personal details-->
+			<fieldset>
+				<legend>Personal Details</legend>
+
+				<label for="firstName">First Name</label>
+				<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+				<span class="error-message">This field is required.</span>
+
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+				<span class="error-message">This field is required.</span>
+
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+				<span class="error-message">This field is required.</span>
+			</fieldset>
+
+			<!-- For Feedback details-->
+			 <fieldset>
+				<legend>FeedBack Details</legend>
+
+				<label class="rate-us-label">Rate Us</label>
+				<div class="rating">
+					<span data-value="1">★</span>
+					<span data-value="2">★</span>
+					<span data-value="3">★</span>
+					<span data-value="4">★</span>
+					<span data-value="5">★</span>
+				</div>
+
+				<input type="hidden" id="ratingValue" name="rating" value="">
+
+				<!-- JavaScript for the rating section-->
+				<script>
+					const stars = document.querySelectorAll('.rating span');
+					const ratingValueInput = document.getElementById('ratingValue');
+
+					// Handle hover effect
+					stars.forEach((star, index) => {
+						star.addEventListener('mouseover', () => {
+						stars.forEach((s, i) => {
+							s.classList.toggle('hover', i <= index);
+						});
+						});
+
+						star.addEventListener('mouseout', () => {
+						stars.forEach(s => s.classList.remove('hover'));
+						});
+
+						// Handle click to select
+						star.addEventListener('click', () => {
+						const rating = star.getAttribute('data-value');
+						ratingValueInput.value = rating;
+
+						stars.forEach((s, i) => {
+							s.classList.toggle('selected', i < rating);
+						});
+						});
+					});
+				</script>
+
+
+
+
+				<label>Was this your first time visiting?</label>
+				<div class="radio-group">
+					<div class="radio-option">
+						<input type="radio" id="firstTimeYes" name="firstTime" value="yes">
+						<label for="firstTimeYes">Yes</label>
+					</div>
+					<div class="radio-option">
+						<input type="radio" id="firstTimeNo" name="firstTime" value="no">
+						<label for="firstTimeNo">No</label>
+					</div>
+				</div>
+
+
+				<label>Was this website informative and easy to navigate?</label>
+				<div class="radio-group">
+					<div class="radio-option">
+						<input type="radio" id="informativeYes" name="informative" value="yes">
+						<label for="informativeYes">Yes</label>
+					</div>
+					<div class="radio-option">
+						<input type="radio" id="informativeNo" name="informative" value="no">
+						<label for="informativeNo">No</label>
+					</div>
+				</div>
+
+				<label>Would you recommend our website?</label>
+				<div class="radio-group">
+					<div class="radio-option">
+						<input type="radio" id="recommendYes" name="recommend" value="yes">
+						<label for="recommendYes">Yes</label>
+					</div>
+					<div class="radio-option">
+						<input type="radio" id="recommendNo" name="recommend" value="no">
+						<label for="recommendNo">No</label>
+					</div>
+				</div>
+				
+				<label for="infoSatisfaction">How satisfied are you with the information provided on the website?</label>
+				<select id="infoSatisfaction" name="infoSatisfaction">
+					<option value="verySatisfied">Very Satisfied</option>
+					<option value="satisfied">Satisfied</option>
+					<option value="neutral">Neutral</option>
+					<option value="dissatisfied">Dissatisfied</option>
+					<option value="veryDissatisfied">Very Dissatisfied</option>
+				</select>
+
+				<!-- New Date Selection Field -->
+				<label for="date">Select Date of Visit</label>
+				<input type="date" id="date" name="date" required>
+				
+				<label for="websiteFeatures">Which features of the website did you find helpful? (Select all that apply)</label>
+				<select id="websiteFeatures" name="websiteFeatures[]" multiple size="4" style="width: 100%; height: 100px;">
+					<option value="easyNavigation">Easy Navigation</option>
+					<option value="clearInformation">Clear Information</option>
+					<option value="usefulContent">Useful Content</option>
+					<option value="attractiveDesign">Attractive Design</option>
+					<option value="fastLoading">Fast Loading</option>
+				</select>
+
+
+				<label for="experience">Describe your experience</label>
+				<textarea id="experience" name="experience" rows="4" placeholder="Share your experience with us (optional)" maxlength="500"></textarea>
+				<div>Maximum 500 characters</div>
+
+
+			 </fieldset>
+			<div class="button">
+				<button type="submit" id="submitButton">Submit</button>
+				<button type="button" id="clearButton">Clear Form</button>
+			</div>
+
+			<!-- Script to clear the form-->
+			<script>
+				const clearBtn = document.getElementById('clearButton');
+				const form = document.getElementById('myForm');
+
+				clearBtn.addEventListener('click', () => {
+					form.reset(); 
+				});
+			</script>
+
+			
+		</form>
+		
+	</div>
+
+
+</body>
+</html>

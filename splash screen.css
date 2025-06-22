@@ -11,7 +11,7 @@
     }
 
     body {
-      background-image: url('World_hunger_Solution_Borgen.jpg');
+      background-image: url('assets/World_hunger_Solution_Borgen.jpg');
       background-size: cover;
       background-position: center;
       animation: bgZoom 4s ease-in-out forwards;

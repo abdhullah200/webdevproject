@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+body {
+  background-color: #E8E8D2;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+}
+
+nav-left{
+  width: 150px;  
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #8B4513;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.nav-links ul li a{
+    color: #1A2237;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li a:hover{
+    color:#8B4513 ;
+}
+
+nav .fa{
+    display: none;
+ 
+}
+
+.account-icon img{
+    width: 35px;
+    
+    
+}
+
+
+.form-container{
+    background-color: #ffffe4;
+    width: 60%;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+.form-container h1{
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2em; ;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none; 
+}
+
+/* Style for invalid input fields */
+input:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+/* Style for valid input fields */
+input:valid,
+textarea:valid {
+    border-color: green;
+}
+
+
+/* Rating */
+.rate-us-label {
+    font-size: 50px;
+}
+
+.rating span {
+  font-size: 50px;
+  cursor: pointer;
+  color: gray; /* default */
+  transition: color 0.3s;
+}
+
+.rating span.hover,
+.rating span.selected {
+  color: gold;
+}
+
+
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 550px; 
+    height: 40px;  
+    font-size: 16px;  
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Adjust textarea for experience */
+#experience {
+    width: 550px;
+    height: 100px;
+}
+
+
+/* Radio button styling */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.radio-group label {
+    margin-left: 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Remove red border before form submission */
+input:invalid, textarea:invalid {
+    border: 1px solid #ccc; 
+}
+
+/* Show the red border after form submission (validation) */
+input:focus:invalid,
+textarea:focus:invalid {
+    border: 5px solid red; 
+}
+
+/* Optional: Green border for valid fields */
+input:focus:valid,
+textarea:focus:valid {
+    border: 5px solid green; 
+}
+
+/* Style for the clear button */
+
+.button {
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 20px; /* adds space between buttons */
+  margin-top: 20px; /* optional: space from top elements */
+}
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#submitButton{
+    background-color: #1A2237;
+    font-weight: bold;
+    color: #E8E8D2;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+#submitButton:hover{
+    background-color: #8B4513;
+}
+
+#clearButton{
+    background: #E8E8D2; 
+    font-weight: bold;
+    color: #1A2237;
+    padding: 10px;
+    border: 2px solid #1A2237;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#clearButton:hover {
+    color: #8B4513;
+    border-color: #8B4513;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(232,232,210,0.18); 
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.nav-left {
+  width: 150px;  
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul li {
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position:
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #8B4513;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.nav-links ul li a {
+  color: #1A2237;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li a:hover {
+  color: #8B4513;
+}
+
+.nav-links ul li a.active {
+  color: #8B4513;
+}
+
+.account-icon img {
+  width: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.account-icon img:hover {
+  transform: scale(1.1);
+}
