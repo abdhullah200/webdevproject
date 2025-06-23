@@ -78,7 +78,7 @@ nav .fa{
 .form-container{
     background-color: #ffffe4;
     width: 60%;
-    margin: 10px auto;
+    margin: 30px auto;
     padding: 30px;
     border-radius: 30px;
 
@@ -150,11 +150,11 @@ textarea:valid {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 550px; 
-    height: 40px;  
+    width: 450px; 
+    height: 30px;  
     font-size: 16px;  
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #ccc;
 }
 
@@ -273,7 +273,7 @@ nav {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position:
+
 }
 
 .nav-links ul li::after {
