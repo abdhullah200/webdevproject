@@ -1,168 +1,316 @@
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
 
-    body {
-      background-image: url('assets/World_hunger_Solution_Borgen.jpg');
-      background-size: cover;
-      background-position: center;
-      animation: bgZoom 4s ease-in-out forwards;
-    }
+body {
+  background-image: url('assets/World_hunger_Solution_Borgen.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: bgZoom 4s ease-in-out forwards;
+}
 
-    @keyframes bgZoom {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.05);
-      }
-    }
+@keyframes bgZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
 
-    .splash-container {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      z-index: 1;
-      animation: fadeOut 1s ease forwards;
-      animation-delay: 3.5s;
-    }
+.splash-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 3.5s;
+}
 
-    .glass-card {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(12px);
-      padding: 30px 50px;
-      border-radius: 20px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      color: #fff;
-      animation: scaleIn 1.5s ease;
-    }
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #1A2237;
+  animation: scaleIn 1.5s ease;
+  border-left: 5px solid #8B4513;
+  border-top: 1px solid rgba(139, 69, 19, 0.3);
+  max-width: 500px;
+  margin: 0 20px;
+}
 
-    @keyframes scaleIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-    .logo {
-      font-size: 40px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      animation: fadeInUp 1s ease forwards;
-    }
+.logo {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  animation: fadeInUp 1s ease forwards;
+  color: #8B4513;
+}
 
-    .logo-icon {
-      width: 20px;
-      height: 20px;
-      background-color: #8B4513;
-      border-radius: 50%;
-    }
+.logo-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: brightness(1.1);
+  animation: logoGlow 2s ease-in-out infinite alternate;
+}
 
-    .mission {
-      font-size: 18px;
-      margin: 10px 0;
-      font-style: italic;
-      animation: fadeInUp 1s ease forwards;
-      animation-delay: 0.5s;
-    }
+@keyframes logoGlow {
+  0% {
+    filter: brightness(1.1) drop-shadow(0 0 8px rgba(139, 69, 19, 0.4));
+  }
+  100% {
+    filter: brightness(1.3) drop-shadow(0 0 15px rgba(139, 69, 19, 0.6));
+  }
+}
 
-    .team {
-      margin-top: 20px;
-      animation: fadeInUp 1s ease forwards;
-      animation-delay: 1s;
-    }
+.mission {
+  font-size: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+  color: #1A2237;
+  line-height: 1.4;
+}
 
-    .team ul {
-      list-style: none;
-      margin-top: 10px;
-      padding: 0;
-    }
+.team {
+  margin-top: 25px;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1s;
+  background: rgba(139, 69, 19, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(139, 69, 19, 0.2);
+}
 
-    .team li {
-      margin: 4px 0;
-      font-size: 15px;
-    }
+.team h3 {
+  color: #8B4513;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
 
-    .apple-loader {
-      font-size: 30px;
-      margin: 20px auto 10px;
-      animation: spin 2s linear infinite;
-    }
+.team ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
 
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
+.team li {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #1A2237;
+  font-weight: 500;
+}
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 12px;
-      color: white;
-    }
+.apple-loader {
+  margin: 25px auto 15px;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.5s;
+  color: #8B4513;
+}
 
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+.loader-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
 
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-    }
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #8B4513;
+  animation: bounce 1.4s ease-in-out infinite both;
+}
 
-    .mask-circle {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 0;
-      height: 0;
-      background: white;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 999;
-      animation: circleExpand 1s ease-in forwards;
-      animation-delay: 3.7s;
-    }
+.dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
 
-    @keyframes circleExpand {
-      0% {
-        width: 0;
-        height: 0;
-        opacity: 0.5;
-      }
-      100% {
-        width: 2000px;
-        height: 2000px;
-        opacity: 1;
-      }
-    }
+.dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+.apple-loader p {
+  font-size: 14px;
+  color: #8B4513;
+  margin: 0;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  font-size: 12px;
+  color: #1A2237;
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.mask-circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #E8E8D2;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  animation: circleExpand 1s ease-in forwards;
+  animation-delay: 3.7s;
+}
+
+@keyframes circleExpand {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.8;
+  }
+  100% {
+    width: 2000px;
+    height: 2000px;
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .glass-card {
+    padding: 30px 40px;
+    margin: 0 15px;
+  }
+  
+  .logo {
+    font-size: 36px;
+    gap: 12px;
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .mission {
+    font-size: 18px;
+  }
+  
+  .team {
+    padding: 15px;
+  }
+  
+  .team h3 {
+    font-size: 16px;
+  }
+  
+  .team li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-card {
+    padding: 25px 30px;
+    margin: 0 10px;
+  }
+  
+  .logo {
+    font-size: 32px;
+    gap: 10px;
+  }
+  
+  .logo-image {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .mission {
+    font-size: 16px;
+  }
+  
+  .team {
+    padding: 12px;
+  }
+  
+  .team h3 {
+    font-size: 15px;
+  }
+  
+  .team li {
+    font-size: 13px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
