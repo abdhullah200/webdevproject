@@ -111,14 +111,16 @@ nav .fa{
 }
 
 .volunteer-btn {
-  margin: 0 auto; /* this centers the button */
+  margin: 30px auto; 
   padding: 10px 20px;
+  text-decoration: none;
   border: 1px solid;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #1A2237;
   width: fit-content;
   color: #E8E8D2;
   font-weight: bold;
+  font-size: 25px;
   display: block;
   cursor: pointer;
 }
@@ -242,7 +244,7 @@ nav .fa{
 }
 .help-card img {
   height: 250px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 
