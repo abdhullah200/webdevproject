@@ -1,57 +1,131 @@
-/* Base Page Styling */
 
-/* Table Header */
-.table-header {
-  text-align: center;
-  color: #1A2237;
-  padding: 30px;
+
+.team h1{
+    color: #1A2237;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 70px;
+}
+.team p{
+    color: #1A2237;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
 }
 
-.table-header h1 {
-  font-size: 2.5rem;
-  color: #333; /* Changed from moccasin to #333 for darker heading */
-  margin: 0;
+
+
+
+.team-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.container{
+    margin-bottom: 110px;
+    position: relative;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .mycard{
+    position: relative;
+    width: 300px;
+    border-radius: 20px;
+    height: 150px;
+    background: rgb(249, 231, 197);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+    transition: 0.4s ease-in-out;
+}
+.container .mycard:hover{
+    height: 340px;
 }
 
-/* Hunger Stats Table */
-.hunger-table {
-  width: 90%;
-  margin: 40px auto;
-  border-collapse: collapse;
-  border: 2px solid #1A2237; /* Use main dark blue from home.css */
-  background-color: #fff;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 12px;
-  overflow: hidden;
+.container .mycard .cimg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -60px;
+    left: 50px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
 }
 
-.hunger-table th, .hunger-table td {
-  border: 1px solid #1A2237; /* Use main dark blue for cell borders */
-  padding: 16px 20px;
-  text-align: center;
-  font-size: 1rem;
-  color: #1A2237; /* Use main text color from home.css */
+.container .mycard .cimg img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
 }
 
-.hunger-table th {
-  background-color: #8B4513; /* Use brown from home.css */
-  color: #E8E8D2; /* Use light text from home.css */
-  font-size: 1.1rem;
+.container .mycard .cdetail{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    font-family: 'Poppins';
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    
+
 }
 
-.hunger-table tr:nth-child(even) {
-  background-color: #F8F8F2; /* Use help-section bg from home.css */
+.container .mycard .cdetail h2{
+    font-weight: bold;
+    
+
+}
+.container .mycard .cdetail .role{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.container .mycard .cdetail .task{
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.hunger-table tr:hover {
-  background-color: #E8E8D2; /* Use body bg from home.css for hover */
+.container .mycard .cdetail ul{
+  list-style-position: inside;
+  font-size: 14px;
+}
+.content-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #1A2237;
+  color: rgb(249, 231, 197);
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
-/* Footer Style */
-.table-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: moccasin;  /* Green footer matching nav */
-  color: white;
-  margin-top: 40px;
+.content-button:hover {
+  background-color: #A0522D;
+}
+
+
+
+.container .mycard:hover .cdetail{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
+
+
+
+.ex{
+    height: 1000px;
+    border: #E8E8D2;
 }
