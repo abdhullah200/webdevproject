@@ -99,7 +99,7 @@ nav {
 
 .hero {
   position: relative;
-  background-image: url('./assets/Ethiopia_coverpage.png'); /* ✅ Add your image here */
+  background-image: url('./assets/Ethiopia_coverpage.png'); 
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -317,7 +317,7 @@ nav {
   text-align: justify;
 }
 
-.about-sudan {
+.about-Ethiopia {
   position: relative;
   top: 20px;
   border: solid 2px #1A2237;
@@ -328,15 +328,70 @@ nav {
   text-decoration: none;
   transition: background-color 0.3s ease;
   margin-top: 30px;
+  display: inline-block;
 }
 
-.about-sudan:hover {
-  color: #A0522D;
-  border: solid 2px #A0522D;
+.about-Ethiopia:hover {
+  background-color: #1A2237;
+  color: #E8E8D2;
 }
 
+.references {
+  padding: 60px 20px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 40px;
+}
 
+.references h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1A2237;
+  margin-bottom: 35px;
+}
 
+.reference-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reference-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #1A2237;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reference-item:hover {
+  transform: translateX(5px);
+}
+
+.reference-item p {
+  color: #1A2237;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.reference-item a {
+  color: #2E7D32;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.reference-item a:hover {
+  color: #1B5E20;
+  text-decoration: underline;
+}
 
 #backToTop {
   position: fixed;
