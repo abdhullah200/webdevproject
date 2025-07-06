@@ -39,9 +39,8 @@ body {
   animation-delay: 3.5s;
 }
 
-.glass-card {
+.card-container {
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(12px);
   padding: 40px 60px;
   border-radius: 20px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
@@ -134,7 +133,7 @@ body {
   font-weight: 500;
 }
 
-.apple-loader {
+.loader {
   margin: 25px auto 15px;
   animation: fadeInUp 1s ease forwards;
   animation-delay: 1.5s;
@@ -178,7 +177,7 @@ body {
   }
 }
 
-.apple-loader p {
+.loader p {
   font-size: 14px;
   color: #8B4513;
   margin: 0;
@@ -245,11 +244,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .glass-card {
-    padding: 30px 40px;
-    margin: 0 15px;
-  }
-  
   .logo {
     font-size: 36px;
     gap: 12px;
@@ -278,7 +272,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .glass-card {
+  .card-container {
     padding: 25px 30px;
     margin: 0 10px;
   }

@@ -317,7 +317,7 @@
   transform: scale(1.1);
 }
 
-/* Enhanced Emoji Rating */
+/* Emoji Rating */
 .emoji-rating .emoji-btn {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -421,19 +421,6 @@
   font-weight: 600;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem 0;
-  background-color: #1A2237;
-  color: #E8E8D2;
-  margin-top: 2rem;
-}
-
-footer a {
-  color: #D2691E;
-  text-decoration: none;
-}
-
 /* Volunteer Statistics Table */
 .volunteer-stats {
   margin-bottom: 2rem;
@@ -500,7 +487,6 @@ footer a {
   border-bottom: none;
 }
 
-/* Responsive table */
 @media (max-width: 768px) {
   .stats-table {
     font-size: 12px;
