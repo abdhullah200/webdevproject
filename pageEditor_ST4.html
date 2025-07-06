@@ -1,151 +1,226 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Editor Student - provide your student name</title>
-    <link rel='stylesheet' href="./styles.css">
-    <link rel="stylesheet" href="./pageEditor_validator.css"> <!-- External CSS link -->
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor of Kirushanth Sathiyaseelan</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./pageEditor_validator.css" />
 </head>
+
 <body>
     <nav>
-  <div class="nav-left"></div>
-  <div class="nav-links" id="navLinks">
-    <ul>
-      <li><a href="./home.html">HOME</a></li>
-      <li><a href="./sitemap.html">SITEMAP</a></li>
-      <li><a href="./volunteer.html">VOLUNTEER</a></li>
-      <li><a href="./team.html">TEAM</a></li>
-      <li><a href="./Feedback.html">FEEDBACK</a></li>
-      <li><a href="./Table.html">STATS</a></li>
-    </ul>
-  </div>
-  <div class="account-icon">
-    <a href="./user.html">
-      <img src="./assets/ic--baseline-account-circle.png" alt="Account Icon">
-    </a>
-  </div>
-</nav>
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+        <div class="nav-left"></div>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./sitemap.html">SITEMAP</a></li>
+                <li><a href="./volunteer.html">VOLUNTEER</a></li>
+                <li><a href="./team.html">TEAM</a></li>
+                <li><a href="./Feedback.html">FEEDBACK</a></li>
+                <li><a href="./Table.html">STATS</a></li>
+            </ul>
+        </div>
+        <div class="account-icon">
+            <a href="./user.html">
+                <img src="./assets/ic--baseline-account-circle.png" alt="Account Icon" />
+            </a>
+        </div>
+    </nav>
 
     <header id="top">
         <h1 class="headingtop">Zero hunger</h1>
     </header>
 
     <section class="stud">
-        <h2>Student name, student role</h2>
+        <h2>Kirushanth Sathiyaseelan, w2151899</h2>
     </section>
 
     <div class="container">
-        <!-- Main content area -->
         <main>
 
-            <!-- Update those first three sections for the pages you were responsible to implement -->
-
+            <!-- User Profile Page -->
             <section>
-                <h2 id="splash">Splash Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-                    
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                    <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                <h2 id="userProfile">User Profile Page</h2>
+                <br />
+                <h3>Technical Description</h3>
+                <br />
+                <ul>
+                    <li>The user profile page uses semantic HTML elements such as <code>&lt;section&gt;</code> and
+                        <code>&lt;article&gt;</code> for clear content grouping and accessibility.</li>
+                    <br />
+                    <li>User information is displayed in cards styled using CSS Grid to ensure responsiveness and neat layout.</li>
+                    <br />
+                    <li>The page includes form controls for updating user details, with HTML5 validation attributes like <code>required</code> to ensure data integrity.</li>
+                    <br />
+                    <li>Profile picture upload is supported with descriptive <code>alt</code> attributes to enhance accessibility.</li>
+                    <br />
+                    <li>Styling and layout are consistent through external CSS files, following the project’s design system.</li>
+                </ul>
+                <br />
+                <h3>Accessibility</h3>
+                <br />
+                <ul>
+                    <li>The <code>lang="en"</code> attribute enables screen readers to interpret the language correctly.</li>
+                    <li>All form inputs are paired with <code>&lt;label&gt;</code> elements linked via <code>for</code> attributes for enhanced assistive technology support.</li>
+                    <li>Keyboard navigation is fully supported, allowing users to tab through interactive elements.</li>
+                    <li>Color contrast and font sizes are chosen to comply with WCAG 2.1 AA standards.</li>
+                    <li>Images include meaningful <code>alt</code> text descriptions.</li>
+                </ul>
+                <br />
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST4.html#userProfileVal">Validation results for the User Profile page</a></p>
+                <br />
+                <h3>Link to the page</h3>
+                <p><a href="./user.html">Visit the User Profile Page</a></p>
             </section>
 
+            <!-- Sitemap Page -->
             <section>
-                <h2 id="volunteer">Volunteer Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                <h2 id="sitemap">Sitemap Page</h2>
+                <br />
+                <h3>Technical Description</h3>
+                <br />
+                <ul>
+                    <li>The sitemap page utilizes SVG graphics to visually represent the site’s navigation hierarchy with clickable interactive nodes.</li>
+                    <br />
+                    <li>Semantic HTML elements such as <code>&lt;nav&gt;</code> and <code>&lt;section&gt;</code> structure the content logically for SEO and accessibility.</li>
+                    <br />
+                    <li>SVG elements like <code>&lt;rect&gt;</code>, <code>&lt;line&gt;</code>, and <code>&lt;text&gt;</code> are used to create the site structure with links embedded within <code>&lt;a&gt;</code> tags.</li>
+                    <br />
+                    <li>Consistent CSS styling ensures the sitemap is visually coherent and responsive across devices.</li>
+                </ul>
+                <br />
+                <h3>Accessibility</h3>
+                <br />
+                <ul>
+                    <li>The <code>lang="en"</code> attribute provides language context for screen readers.</li>
+                    <li>Interactive SVG nodes are wrapped with semantic <code>&lt;a&gt;</code> links to support keyboard navigation and screen reader announcements.</li>
+                    <li>All images and icons include descriptive <code>alt</code> attributes.</li>
+                    <li>Color contrast complies with accessibility guidelines for legibility.</li>
+                    <li>Logical tab order and visible focus states are provided for keyboard users.</li>
+                </ul>
+                <br />
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST4.html#sitemapVal">Validation results for the Sitemap page</a></p>
+                <br />
+                <h3>Link to the page</h3>
+                <p><a href="./sitemap.html">Visit the Sitemap Page</a></p>
             </section>
 
+            <!-- Content Page -->
             <section>
-                <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                <h2 id="contentPage">Content Page</h2>
+                <br />
+                <h3>Technical Description</h3>
+                <br />
+                <ul>
+                    <li>The content page uses semantic sectioning elements such as <code>&lt;section&gt;</code> and heading tags to organize topics clearly.</li>
+                    <br />
+                    <li>A fixed navigation bar uses <code>backdrop-filter</code> and <code>box-shadow</code> for a frosted glass effect while maintaining readability.</li>
+                    <br />
+                    <li>The hero section features a full-screen background image with a semi-transparent overlay using the <code>::before</code> pseudo-element to ensure text contrast.</li>
+                    <br />
+                    <li>Content is divided into multiple sections including “Hunger Situation,” “Causes,” “Efforts,” “Solutions,” and “References” with consistent card styling and hover effects for user engagement.</li>
+                    <br />
+                    <li>Responsive design is implemented with flexbox and media queries for layout adjustment on smaller screens.</li>
+                    <br />
+                    <li>The page uses Google Fonts ('Poppins') for consistent typography across devices.</li>
+                </ul>
+                <br />
+                <h3>Accessibility</h3>
+                <br />
+                <ul>
+                    <li>Use of semantic HTML5 elements improves screen reader navigation and SEO.</li>
+                    <li>Navigation links and buttons include hover and focus styles for keyboard and assistive technology users.</li>
+                    <li>Color contrast and font size comply with WCAG 2.1 AA for readability.</li>
+                    <li>Responsive layout ensures content is readable and usable on all screen sizes.</li>
+                    <li>Clickable elements have appropriate sizes for touch targets on mobile devices.</li>
+                </ul>
+                <br />
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST4.html#contentVal">Validation results for the Content page</a></p>
+                <br />
+                <h3>Link to the page</h3>
+                <p><a href="./st_4-Content_page.html">Visit the Content Page</a></p>
             </section>
 
+            <!-- Challenges and Lessons Learned -->
             <section>
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <br />
+                <p>
+                    Designing accessible and responsive pages across different content types posed challenges in balancing
+                    semantic HTML with complex styling requirements. Ensuring interactive elements were fully keyboard
+                    navigable and met accessibility standards required extensive testing.
+                </p>
+                <br />
+                <p>
+                    Another challenge was managing consistent style and layout between pages while accommodating
+                    different content structures such as SVG-based sitemaps and user profile forms.
+                </p>
+                <br />
+                <p>
+                    Lessons learned include the importance of semantic structure for accessibility, the value of
+                    external CSS for maintainability, and early validation testing to avoid issues in final deployment.
+                </p>
             </section>
 
+            <!-- Compliance -->
             <section>
-                <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
-
-                    
+                <h2 id="compliance">Compliance</h2>
+                <br />
+                <p>
+                    All pages comply with JANET Acceptable Use Policy, ensuring content is educational and non-commercial,
+                    with no collection of personal data beyond what is necessary for user interaction. The design
+                    considers ethical publishing standards and maintains data privacy.
+                </p>
             </section>
 
+            <!-- References -->
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                    </ul>
+                <br />
+                <ul class="ref">
+                    <li>Duckett, J., 2011. <i>HTML and CSS: Design and Build Websites</i>. 1st ed. Indianapolis: Wiley Publishing, Inc.</li>
+                    <li>MDN Web Docs, n.d. Introduction to HTML. [online] Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/HTML</a> [Accessed 6 July 2025].</li>
+                    <li>W3C, 2018. Web Content Accessibility Guidelines (WCAG) 2.1. [online] Available at: <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/WCAG21/</a> [Accessed 6 July 2025].</li>
+                    <li>Google Fonts, n.d. Poppins Font Family. [online] Available at: <a href="https://fonts.google.com/specimen/Poppins" target="_blank" rel="noopener noreferrer">https://fonts.google.com/specimen/Poppins</a> [Accessed 6 July 2025].</li>
+                    <li>JANET, 2024. JANET Acceptable Use Policy. [online] Available at: <a href="https://community.jisc.ac.uk/library/janet-acceptable-use-policy" target="_blank" rel="noopener noreferrer">https://community.jisc.ac.uk/library/janet-acceptable-use-policy</a> [Accessed 6 July 2025].</li>
+                </ul>
             </section>
 
-            <p class="top"><a href="#top">Go top</a></p>
+
         </main>
 
-        <!-- Sidebar area -->
         <aside>
             <h3>Core pages developed:</h3>
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
             <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
-                    <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="./splash screen.html">Splash page</a></li>
+                    <li><a href="./Volunteer.html">Volunteer page</a></li>
+                    <li><a href="./st_1-Content_page.html">Content page</a></li>
+                </ul>
                 <li>Student 2</li>
-                    <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="./Home.html">Home page</a></li>
+                    <li><a href="./Table.html">Table page</a></li>
+                    <li><a href="./st_1-Content_page.html">Content page</a></li>
+                </ul>
                 <li>Student 3</li>
-                    <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="./Feedback.html">Feedback page</a></li>
+                    <li><a href="./team.html">Team page</a></li>
+                    <li><a href="./st_3-Content_page.html">Content page</a></li>
+                </ul>
                 <li>Student 4</li>
-                    <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
-                        <li><a href="#">Content page</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="./user.html">Profile page</a></li>
+                    <li><a href="./sitemap.html">Sitemap page</a></li>
+                    <li><a href="./st_4-Content_page.html">Content page</a></li>
+                </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
                 <li><a href="#compliance">Compliance</a></li>
                 <li><a href="#ref">References</a></li>
@@ -153,46 +228,51 @@
         </aside>
     </div>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="./Home.html">Home</a></li>
-          <li><a href="./sitemap.html">Sitemap</a></li>
-          <li><a href="./Volunteer.html">Volunteer</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="./st_3-Content_page.html">Content Page</a></li>
-          <li><a href="./Feedback.html">Feedback</a></li>
-          <li><a
-              href="https://www.fao.org/sustainable-development-goals-data-portal/data/indicators/2.1.1-prevalence-of-undernourishment/en">Stats</a>
-          </li>
-        </ul>
-      </div>
-      <div class="Quote">
-        <h3>"End Hunger, Heal the Planet"</h3>
-      </div>
-      <div class="Team-members">
-        <h3>Team Members</h3>
-        <ul>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./sitemap.html">Sitemap</a></li>
+                    <li><a href="./Volunteer.html">Volunteer</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./st_3-Content_page.html">Content Page</a></li>
+                    <li><a href="./Feedback.html">Feedback</a></li>
+                    <li><a
+                            href="https://www.fao.org/sustainable-development-goals-data-portal/data/indicators/2.1.1-prevalence-of-undernourishment/en">Stats</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Quote">
+                <h3>"End Hunger, Heal the Planet"</h3>
+            </div>
+            <div class="Team-members">
+                <h3>Team Members</h3>
+                <ul>
                     <li><a href="./pageEditor_ST1.html">Abdullah Ariff</a></li>
                     <li><a href="./pageEditor_ST3.html">Ishadh Ifham</a></li>
                     <li><a href="./pageEditor_ST2.html">Abdul Ali</a></li>
                     <li><a href="./pageEditor_ST4.html">Kirushanth Sathiyaseelan</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <a href="#" class="social-icon">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-        </a>
-        <a href="#" class="social-icon">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
-        </a>
-        <a href="#" class="social-icon">
-          <img id="reddit" src="assets/reddit.png" alt="Reddit">
-        </a>
-      </div>
-      <p class="footer-text">&copy; 2025 Zero Hunger Initiative. All rights reserved.</p>
-    </div>
-  </footer>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook" />
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+                        alt="Instagram" />
+                </a>
+                <a href="#" class="social-icon">
+                    <img id="reddit" src="assets/reddit.png" alt="Reddit" />
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2025 Zero Hunger Initiative. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <p class="top"><a href="#top">Go top</a></p>
 </body>
+
 </html>
