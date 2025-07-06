@@ -45,138 +45,249 @@
 
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-<section>
-  <h2 id="splash">Splash Page</h2>
+            <section>
+                <h2 id="splash">Splash Page</h2>
 
-  <h3>Technical Description</h3>
-  <ul>
-    <li><code>&lt;meta http-equiv="refresh" content="4;url=Home.html"&gt;</code> is used to automatically redirect the user to the homepage after 4 seconds, giving enough time to present the splash animation.</li>
-    <li>The webpage uses the <strong>'Poppins'</strong> font for a clean and modern aesthetic, typically imported via Google Fonts and applied globally through CSS.</li>
-    <li>Design aesthetics are enhanced with <code>border-radius: 20px</code> and <code>box-shadow</code> for smooth corners and depth.</li>
-    <li>The splash experience is animated using <code>@keyframes</code>:
-      <ul>
-        <li><code>bgZoom</code> for background image scaling animation</li>
-        <li><code>fadeInUp</code> for content entrance effect</li>
-        <li><code>bounce</code> for animated loading dots</li>
-        <li><code>circleExpand</code> for the expanding circle transition before redirect</li>
-      </ul>
-    </li>
-    <li>The <code>.mask-circle</code> element creates a full-screen expanding circle transition just before redirection to enhance the visual flow and make the transition more fluid.</li>
-  </ul>
+                <h3>Technical Description</h3>
+                <ul>
+                    <li><code>&lt;meta http-equiv="refresh" content="4;url=Home.html"&gt;</code> is used to
+                        automatically redirect the user to the homepage after 4 seconds, giving enough time to present
+                        the splash animation.</li>
+                    <li>The webpage uses the <strong>'Poppins'</strong> font for a clean and modern aesthetic, typically
+                        imported via Google Fonts and applied globally through CSS.</li>
+                    <li>Design aesthetics are enhanced with <code>border-radius: 20px</code> and <code>box-shadow</code>
+                        for smooth corners and depth.</li>
+                    <li>The splash experience is animated using <code>@keyframes</code>:
+                        <ul>
+                            <li><code>bgZoom</code> for background image scaling animation</li>
+                            <li><code>fadeInUp</code> for content entrance effect</li>
+                            <li><code>bounce</code> for animated loading dots</li>
+                            <li><code>circleExpand</code> for the expanding circle transition before redirect</li>
+                        </ul>
+                    </li>
+                    <li>The <code>.mask-circle</code> element creates a full-screen expanding circle transition just
+                        before redirection to enhance the visual flow and make the transition more fluid.</li>
+                </ul>
 
-  <h3>Accessibility</h3>
-  <ul>
-    <li>The <code>lang="en"</code> attribute on the HTML tag helps screen readers determine the correct language context.</li>
-    <li>The <code>viewport</code> meta tag allows the layout to adapt responsively on all devices, including mobile and tablets.</li>
-    <li>Responsive design is handled with <code>@media</code> queries to adjust text size, padding, and layout on smaller screens.</li>
-    <li>The main content is contained within the <code>.card-container</code>, which scales properly to different viewports for accessibility and usability.</li>
-    <li>Semantic elements and a logical heading structure (<code>h2</code>, <code>h3</code>) help assistive technologies interpret the page's structure.</li>
-    <li>Images, like the logo, use descriptive <code>alt</code> text to support users with visual impairments.</li>
-  </ul>
+                <h3>Accessibility</h3>
+                <ul>
+                    <li>The <code>lang="en"</code> attribute on the HTML tag helps screen readers determine the correct
+                        language context.</li>
+                    <li>The <code>viewport</code> meta tag allows the layout to adapt responsively on all devices,
+                        including mobile and tablets.</li>
+                    <li>Responsive design is handled with <code>@media</code> queries to adjust text size, padding, and
+                        layout on smaller screens.</li>
+                    <li>The main content is contained within the <code>.card-container</code>, which scales properly to
+                        different viewports for accessibility and usability.</li>
+                    <li>Semantic elements and a logical heading structure (<code>h2</code>, <code>h3</code>) help
+                        assistive technologies interpret the page's structure.</li>
+                    <li>Images, like the logo, use descriptive <code>alt</code> text to support users with visual
+                        impairments.</li>
+                </ul>
 
-  <h3>Link to the validation page</h3>
-  <p>
-    <a href="validation_ST1.html#splashVal">Include a link to the validation page</a>, using a named anchor to jump directly to the splash page validation section.
-  </p>
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST1.html#splashVal">Include a link to the validation page</a>, using a named
+                    anchor to jump directly to the splash page validation section.
+                </p>
 
-  <h3>Link to the page</h3>
-  <p>
-    <a href="splash screen.html">Include a link to the actual splash screen page described above.</a>
-  </p>
-</section>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="splash screen.html">Include a link to the actual splash screen page described above.</a>
+                </p>
+            </section>
 
-
-
-<section>
-  <h2 id="volunteer">Volunteer Page</h2>
-
-  <h3>Technical Description</h3>
-  <ul>
-    <li>The page uses semantic HTML elements such as <code>&lt;section&gt;</code>, <code>&lt;form&gt;</code>, and <code>&lt;label&gt;</code> to maintain a clear content structure and enhance both usability and SEO.</li>
-    <li>User inputs are collected using a <code>&lt;form&gt;</code> element with fields like <code>&lt;input type="text"&gt;</code> and <code>&lt;input type="email"&gt;</code>, accompanied by <code>required</code> attributes for basic validation.</li>
-    <li><code>&lt;label&gt;</code> elements are linked to their corresponding input fields via the <code>for</code> attribute to improve accessibility and form clarity.</li>
-    <li>Styling is achieved using CSS with:
-      <ul>
-        <li><code>padding</code> and <code>margin</code> to space out form elements</li>
-        <li><code>border-radius</code> to round the corners of input boxes and buttons</li>
-        <li><code>box-shadow</code> for subtle visual depth</li>
-        <li><code>hover</code> and <code>focus</code> pseudo-classes to provide user feedback</li>
-      </ul>
-    </li>
-    <li>A flexible layout is achieved using <code>display: flex</code> or <code>display: grid</code> to center the form and ensure responsiveness across different screen sizes.</li>
-    <li>The font <strong>'Poppins'</strong> or a similar modern typeface is imported through Google Fonts for a clean and readable interface.</li>
-  </ul>
-
-  <h3>Accessibility</h3>
-  <ul>
-    <li>The <code>lang="en"</code> attribute on the HTML tag sets the document language for screen readers.</li>
-    <li>Each input field is clearly described using associated <code>&lt;label&gt;</code> tags to improve navigation for users relying on assistive technology.</li>
-    <li>Native HTML form controls ensure compatibility with keyboard navigation and screen readers.</li>
-    <li>Color contrast is designed to meet WCAG standards for readability, ensuring accessible visual design for users with low vision.</li>
-    <li><code>@media</code> queries enable the form layout to adapt gracefully to various screen sizes, improving the mobile user experience.</li>
-    <li>Error messages or validation feedback can use <code>aria-live</code> regions to alert screen readers about changes dynamically.</li>
-  </ul>
-
-  <h3>Link to the validation page</h3>
-  <p>
-    <a href="validation_ST1.html#volunteerVal">Include a link to the validation page</a>, using a named anchor to jump directly to the volunteer page validation section.
-  </p>
-
-  <h3>Link to the page</h3>
-  <p>
-    <a href="volunteer.html">Include a link to the actual volunteer page described above.</a>
-  </p>
-</section>
 
 
             <section>
-                <h2 id="content">Content Page</h2>
+                <h2 id="volunteer">Volunteer Page</h2>
+
                 <h3>Technical Description</h3>
-                <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the
-                    key tags and styling choices focusing on functionality and design without copying large code
-                    sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS
-                    properties used to create structure and styling.</p>
+                <ul>
+                    <li>The page uses semantic HTML elements such as <code>&lt;section&gt;</code>,
+                        <code>&lt;form&gt;</code>, and <code>&lt;label&gt;</code> to maintain a clear content structure
+                        and enhance both usability and SEO.</li>
+                    <li>User inputs are collected using a <code>&lt;form&gt;</code> element with fields like
+                        <code>&lt;input type="text"&gt;</code> and <code>&lt;input type="email"&gt;</code>, accompanied
+                        by <code>required</code> attributes for basic validation.</li>
+                    <li><code>&lt;label&gt;</code> elements are linked to their corresponding input fields via the
+                        <code>for</code> attribute to improve accessibility and form clarity.</li>
+                    <li>Styling is achieved using CSS with:
+                        <ul>
+                            <li><code>padding</code> and <code>margin</code> to space out form elements</li>
+                            <li><code>border-radius</code> to round the corners of input boxes and buttons</li>
+                            <li><code>box-shadow</code> for subtle visual depth</li>
+                            <li><code>hover</code> and <code>focus</code> pseudo-classes to provide user feedback</li>
+                        </ul>
+                    </li>
+                    <li>A flexible layout is achieved using <code>display: flex</code> or <code>display: grid</code> to
+                        center the form and ensure responsiveness across different screen sizes.</li>
+                    <li>The font <strong>'Poppins'</strong> or a similar modern typeface is imported through Google
+                        Fonts for a clean and readable interface.</li>
+                </ul>
 
                 <h3>Accessibility</h3>
-                <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                <ul>
+                    <li>The <code>lang="en"</code> attribute on the HTML tag sets the document language for screen
+                        readers.</li>
+                    <li>Each input field is clearly described using associated <code>&lt;label&gt;</code> tags to
+                        improve navigation for users relying on assistive technology.</li>
+                    <li>Native HTML form controls ensure compatibility with keyboard navigation and screen readers.</li>
+                    <li>Color contrast is designed to meet WCAG standards for readability, ensuring accessible visual
+                        design for users with low vision.</li>
+                    <li><code>@media</code> queries enable the form layout to adapt gracefully to various screen sizes,
+                        improving the mobile user experience.</li>
+                    <li>Error messages or validation feedback can use <code>aria-live</code> regions to alert screen
+                        readers about changes dynamically.</li>
+                </ul>
 
                 <h3>Link to the validation page</h3>
-                <!-- Update the path to link the Page Editor with the splash page -->
-                <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to
-                    jump to the corresponding section of the validation page.</p>
-                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                <p>
+                    <a href="validation_ST1.html#volunteerVal">Include a link to the validation page</a>, using a named
+                    anchor to jump directly to the volunteer page validation section.
+                </p>
 
                 <h3>Link to the page</h3>
-                <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                <p>
+                    <a href="volunteer.html">Include a link to the actual volunteer page described above.</a>
+                </p>
             </section>
+
+
+            <section>
+                <h2 id="contentPage">Content Page</h2>
+
+                <h3>Technical Description</h3>
+                <ul>
+                    <li>This content page is structured using semantic HTML elements such as <code>&lt;nav&gt;</code>,
+                        <code>&lt;section&gt;</code>, and <code>&lt;h2&gt;</code> for clear content grouping and SEO
+                        benefits.</li>
+
+                    <li>The fixed <code>&lt;nav&gt;</code> bar spans the top of the viewport and uses
+                        <code>backdrop-filter</code> and <code>box-shadow</code> for a frosted-glass look, enhancing
+                        aesthetic clarity while maintaining readability.</li>
+
+                    <li>The hero section employs a full-screen background image with a semi-transparent dark overlay
+                        using the <code>::before</code> pseudo-element to ensure that heading and paragraph text remain
+                        legible.</li>
+
+                    <li>Major content sections such as "Hunger Situation", "Causes", "Efforts", "Solutions", and
+                        "References" are divided using <code>&lt;section&gt;</code> and <code>&lt;div&gt;</code>
+                        containers with appropriate class names for modular styling.</li>
+
+                    <li>Cards in sections like <code>.facts</code>, <code>.cause-list</code>, and
+                        <code>.card-list</code> utilize <code>box-shadow</code>, <code>border-radius</code>, and
+                        <code>transform: translateY()</code> hover effects for visual interactivity and depth.</li>
+
+                    <li>Responsive design is implemented using <code>flex-wrap</code> and a media query breakpoint at
+                        <code>1100px</code> to ensure that help cards and content blocks adjust layout for smaller or
+                        larger screens.</li>
+
+                    <li>The "Back to Top" button is styled to appear fixed in the lower-right corner, with hover effects
+                        and dynamic visibility (e.g., toggled via JavaScript).</li>
+
+                    <li>The site uses the Google Font <strong>'Poppins'</strong> across all elements for a consistent,
+                        modern visual tone.</li>
+                </ul>
+
+                <h3>Accessibility</h3>
+                <ul>
+                    <li>Use of semantic sectioning elements such as <code>&lt;section&gt;</code> and heading tags
+                        (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) aids screen reader interpretation and
+                        improves navigation structure.</li>
+
+                    <li>Interactive elements such as navigation links and buttons include clear hover/focus feedback to
+                        enhance usability for users navigating via keyboard.</li>
+
+                    <li>Color contrast between text and background adheres to accessibility standards, especially for
+                        headings, links, and button hover states.</li>
+
+                    <li><code>@media</code> queries allow the layout to adapt for mobile users, ensuring readability and
+                        usability on smaller screens.</li>
+
+                    <li>Clickable elements (like cards and icons) are adequately sized for touch accessibility and
+                        follow good spacing practices to prevent misclicks.</li>
+                </ul>
+
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST1.html#contentVal">Include a link to the content page validation section</a>
+                    for W3C HTML/CSS validation results.
+                </p>
+
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="./st_1-Content_page.html">Include a link to the actual content page described above.</a>
+                </p>
+            </section>
+
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                <p>Detail any challenges encountered during the implementation process and explain how they were
-                    resolved. Reflect on the lessons learned from overcoming these challenges.</p>
+                <p>
+                    A major hurdle was getting users comfortable with the feedback system. The first time it was put
+                    out, the response rate was low because it was just a basic input style and was too long. The fixes
+                    were less about the feedback process and more putting an interface together with engaging features
+                    like emoji ratings, where prompts were simplified and shortened and it worked.
+                </p>
+                <br>
+                <p>
+                    Another issue came from maintaining visual consistency through the different aspects of the UI.
+                    There were small visual discrepancies between button styles, cards and hover effects that disrupted
+                    the user experience. But we were able to get there through reviewing our work, and standardizing the
+                    style.
+                </p>
+                <br>
+                Things to take into consideration are keeping user interactions simple, how visual feedback on
+                engagements will contribute to user success, and consistency builds user trust. Finally, clear design
+                systems and testing regularly helped to get to a final product.</p>
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                <p>Discuss how the pages you have created are compliant with Janet regulations governing web page
-                    publication. This includes demonstrating your understanding and application of these regulations. Be
-                    realistic and truthful.</p>
+                <p>The web pages are in accordance with JANET regulations in that all pages are educational in nature,
+                    non-commercial and do not track or collect any personal information. The design is sensitive to the
+                    ethical and security concerns surrounding the publication of web pages and is consistent with the
+                    JANET Acceptable Use Policy from an educational perspective, in consideration of responsible web
+                    publication within a collegiate context.</p>
 
 
             </section>
 
-            <section>
-                <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
-                    style). For example:<br><br>
-                <ul class="ref">
-                    <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last
-                        accessed: 11 Feb 2025).</li>
-                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
-                            Indianappolis.</i></li>
-                </ul>
-            </section>
+<section>
+    <h2 id="ref">References</h2>
+    <ul class="ref">
+        <li>International Rescue Committee. (2022). IDP camp in Ethiopia – Global crisis [Photograph]. International Rescue Committee. 
+            <a href="https://www.rescue.org/sites/default/files/styles/square_1x1_1280px_wide/public/hero/19631/hero-image/ethiopia_world_crisis_list_2022_idp_camp.jpg">https://www.rescue.org/sites/default/files/styles/square_1x1_1280px_wide/public/hero/19631/hero-image/ethiopia_world_crisis_list_2022_idp_camp.jpg</a>
+        </li>
+
+        <li>News Deeply. (2018). Syrian displacement and conflict [Photograph]. News Deeply. 
+            <a href="https://newsdeeply-app.s3.amazonaws.com/20180227114351/1011_19_1f-7261209.jpg?w=640&fit=max&q=60">https://newsdeeply-app.s3.amazonaws.com/20180227114351/1011_19_1f-7261209.jpg?w=640&fit=max&q=60</a>
+        </li>
+
+        <li>Unknown. (n.d.). Children standing in a conflict-affected region [Photograph]. Google Images.
+            <a href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbtACgCTH6hOZYafIxnyXlnxqVLhIyErwv78Jmf476IB_z_DzB">https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbtACgCTH6hOZYafIxnyXlnxqVLhIyErwv78Jmf476IB_z_DzB</a>
+        </li>
+
+        <li>Linda Ikeji’s Blog. (2022). Displaced African children [Photograph]. Linda Ikeji’s Blog.
+            <a href="https://alexis.lindaikejisblog.com/photos/shares/63076dbccaa61.jpg">https://alexis.lindaikejisblog.com/photos/shares/63076dbccaa61.jpg</a>
+        </li>
+
+        <li>MDG Monitor. (2015). SDG 2 – End hunger, achieve food security [Photograph]. MDG Monitor.
+            <a href="https://i2.wp.com/www.mdgmonitor.org/wp-content/uploads/2015/10/SDG-2-End-hunger-achieve-food-security.jpg?fit=750,410&ssl=1">https://i2.wp.com/www.mdgmonitor.org/wp-content/uploads/2015/10/SDG-2-End-hunger-achieve-food-security.jpg?fit=750,410&ssl=1</a>
+        </li>
+
+        <li>Unknown. (n.d.). Displaced persons receiving aid [Photograph]. Google Images.
+            <a href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0F0BOmiwzSlp4P7Oi3BhB2Q-348pfOlkZGGa1Hi1588jHg_Jy">https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0F0BOmiwzSlp4P7Oi3BhB2Q-348pfOlkZGGa1Hi1588jHg_Jy</a>
+        </li>
+
+        <li>Business Recorder. (2021). Hunger crisis and food insecurity [Photograph]. Business Recorder.
+            <a href="https://i.brecorder.com/primary/2021/06/60c683ed193f5.jpg">https://i.brecorder.com/primary/2021/06/60c683ed193f5.jpg</a>
+        </li>
+
+        <li>Duckett, J. (2011). <i>HTML and CSS: Design and Build Websites</i>. John Wiley & Sons, Inc.</li>
+</section>
+
 
             <p class="top"><a href="#top">Go top</a></p>
         </main>
@@ -190,31 +301,31 @@
                 <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
                 <ul>
-                    <li><a href="#splash">Splash page</a></li>
-                    <li><a href="#volunteer">Volunteer page</a></li>
-                    <li><a href="#content">Content page</a></li>
+                    <li><a href="./splash screen.html">Splash page</a></li>
+                    <li><a href="./Volunteer.html">Volunteer page</a></li>
+                    <li><a href="./st_1-Content_page.html">Content page</a></li>
                 </ul>
                 <li>Student 2</li>
                 <ul>
-                    <li><a href="#">Home page </a></li>
-                    <li><a href="#">Table page</a></li>
-                    <li><a href="#">Content page</a></li>
+                    <li><a href="./Home.html">Home page </a></li>
+                    <li><a href="./Table.html">Table page</a></li>
+                    <li><a href="./st_1-Content_page.html">Content page</a></li>
                 </ul>
                 <li>Student 3</li>
                 <ul>
-                    <li><a href="#">Feedback page</a> </li>
-                    <li><a href="#">Team page</a></li>
-                    <li><a href="#">Content page</a></li>
+                    <li><a href="./Feedback.html">Feedback page</a> </li>
+                    <li><a href="./team.html">Team page</a></li>
+                    <li><a href="./st_3-Content_page.html">Content page</a></li>
                 </ul>
                 <li>Student 4</li>
                 <ul>
-                    <li><a href="#">Profile page </a></li>
-                    <li><a href="#">Sitemap page</a></li>
-                    <li><a href="#">Content page</a></li>
+                    <li><a href="./user.html">Profile page </a></li>
+                    <li><a href="./sitemap.html">Sitemap page</a></li>
+                    <li><a href="./st_4-Content_page.html">Content page</a></li>
                 </ul>
-                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                <li><a href="#compliance">Compliance</a></li>
-                <li><a href="#ref">References</a></li>
+                <li><a href="./pageEditor_ST1.html#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="./pageEditor_ST1.html#compliance">Compliance</a></li>
+                <li><a href="./pageEditor_ST1.html#ref">References</a></li>
             </ul>
         </aside>
     </div>
