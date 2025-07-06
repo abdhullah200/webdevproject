@@ -114,9 +114,11 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       margin-top: 30px;
       background-color: antiquewhite;
-      padding: 10px 10px;
+      padding:10px 10px 10px 10px;
       border-radius: 10px;
-      width: 88%;
+      width: 110%;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     .form h3 {
@@ -137,7 +139,7 @@
       border: 1px solid #ccc;
       border-radius: 8px;
       margin-bottom: 15px;
-      width: 100%;
+      width: 95%;
     }
 
     .form textarea {
@@ -169,6 +171,7 @@
       gap: 20px;
       width: 45%;
       min-width: 300px;
+      min-height: 770px;
     }
 
 
@@ -203,7 +206,7 @@
     font-family: Arial, sans-serif;
 
     flex: 1;
-    width: 208%;
+    width: 200%;
     max-width: 210%;
     padding: 28px 10px 30px 10px;
     margin: 0 auto;
