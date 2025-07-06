@@ -183,10 +183,10 @@
     }
 
     .content-box:hover {
-  background-color: #fcefdc;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
+    background-color: #fcefdc;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    }
 
 
     .content-box h3 {
@@ -199,6 +199,13 @@
       font-size: 14px;
       color: black;
       line-height: 1.4;
+    }
+
+    .content-box ul {
+      font-size: 14px;
+      color: black;
+      line-height: 1.4;
+      padding-left: 13px;
     }
 
 
@@ -281,9 +288,9 @@
         font-size: 16px;
     }
 
-    .sidebar, .right { /* Allow both to take full width on smaller screens when they wrap */
+    .sidebar, .right { 
         width: 100%;
-        flex-basis: auto; /* Reset flex-basis to allow content to dictate or take full width */
+        flex-basis: auto;
     }
 }
 
