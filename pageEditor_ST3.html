@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Editor Student - provide your student name</title>
     <link rel='stylesheet' href="./styles.css">
+    <link rel="stylesheet" href="./pageEditor_ST3.css">
     <link rel="stylesheet" href="./pageEditor_validator.css"> <!-- External CSS link -->
 
 </head>
@@ -44,72 +45,169 @@
 
             <!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <section>
-                <h2 id="splash">Splash Page</h2>
+            <section class="content" id="content">
+                <h2 id="splash">Team Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                        <p>The page is built using semantic and organized HTML and CSS techniques to maintain structure and usability</p>
+                        <ul>
+                            <li><code>&lt;nav&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;div&gt;</code> - Used for semantic page layout.</li>
+                            <li><code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> - Establishes a prominent hero area that introduces the site's mission</li>
+                            <li><code>img</code> tags with <code>alt</code> attributes are used for profile images, promoting accessibilty</li>
+                            <li><code>&lt;a&gt;</code> - Used as styled buttons linking to related content pages</li>
+                        </ul>
+                        <p>The CSS implementation focuses on creating visual hierarchy, responsive design, and interactive elements:</p>
+                        <ul>
+                            <li>Flexbox(<code>display: flex</code>, <code>justify-content</code> and <code>align-items</code>) creates a reponsive and centered layout for the team card section.</li>
+                            <li>Each <code>.mycard</code> component uses <code>bow-shadow</code> for depth and <code>border-radius</code> for softer, modern appearences.</li>
+                            <li>The hover effect (<code>.mycard:hover</code>) expands the card height and reveals hidden content using smooth transitions (<code>transition: 0.4s ease-in-out</code>, <code>opacity</code> and <code>visibility</code>)</li>
+                            <li>Button styles use <code>background-color</code>, <code>border-radius</code> and <code>hover</code> stats to enhance user interaction.</li>
+                        </ul>
+                    <p>These techniques ensure that the page is both functional and visually engaging while maintaining clean code structure.</p>
                     
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>Accessibility was thoughtfully considered in the development of the Team Page to ensure the content is usable by all visitors,
+                            including those using assistive technologies. All profile images include descriptive <code>alt</code> text, allowing screen readers to convey
+                              the visual content to visually impaired users.
+                        </p>
+                        <p>
+                            Semantic HTML tags such as <code>nav</code>, <code>footer</code>, and appropriate headings were used to enhance the page's structure and navigability for screen readers.
+                             The color scheme was selected to maintain strong contrast specifically, a soft background color paired with dark text to ensure readability 
+                             for users with visual impairments.
+                        </p>
+                        <p>
+                            Additionally, the page includes large, clearly clickable buttons and uses a legible font (Poppins) with appropriate sizing to promote readability and ease of navigation across different devices.
+                        </p>
                     
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <p><a href="#">validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                     <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="team.html">Team Page</a></p>
             </section>
 
-            <section>
-                <h2 id="volunteer">Volunteer Page</h2>
+            <section class="content" id="content">
+                <h2 id="splash">Feedback Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                        <p>The page is built using semantic and organized HTML and CSS techniques to maintain structure and usability</p>
+                        <ul>
+                            <li>Used a <code>&lt;form&gt;</code> with <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to group sections.</li>
+                            <li>Included text inputs, dropdowns, radio buttons, and a textarea for feedback collection.</li>
+                            <li>Each input is labeled using <code>&lt;label&gt;</code> for clarity and accessibility.</li>
+                            <li>A custom star rating system was created using <code>&lt;span&gt;</code> and JavaScript.</li>
+                            <li>CSS styles include a soft background, centered layout, rounded corners, and clean spacing.</li>
+                            <li>Form validation shows green or red borders based on input correctness.</li>
+                            <li>Submit and Clear buttons have hover effects and are aligned using Flexbox.</li>
+                        </ul>
                         
+                    <p>These techniques ensure that the page is both functional and visually engaging while maintaining clean code structure.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility was carefully considered throughout the page. All form elements are paired with clear 
+                            <code>label</code> tags, improving screen reader compatibility. Input fields and interactive components are keyboard-accessible.
+                        </p>
+                        <p>
+                           High contrast was maintained between text and background, with dark text on a light background, aiding readability.
+                            Font sizing and spacing ensure comfort for users with visual impairments.
+                        </p>
+                        <p>
+                           In addition, form feedback is visually indicated through color-coded borders and error messages, and semantic structuring 
+                           (like using <code>fieldset</code> and <code>legend</code>) enhances assistive navigation.
+                        </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="#">validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
                     <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="Feedback.html">Feedback Page</a></p>
             </section>
 
-            <section>
-                <h2 id="content">Content Page</h2>
+            <section class="content" id="content">
+                <h2 id="splash">Content Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
-                    <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                        <p>The page is built using semantic and organized HTML and CSS techniques to maintain structure and usability</p>
+                        <ul>
+                            <li><code>&lt;section&gt;</code> tags used for logical content blocks</li>
+                            <li><code>&lt;div&gt;</code> elements used for layout (cards, grids, hero)</li>
+                            <li><code>&lt;a&gt;</code> tag used for linking to external information (WFP site)</li>
+                            <li>“Back to Top” button added using JavaScript for smooth scroll functionality</li>
+                            <li>Clean, consistent design using the <code>Poppins</code> font</li>
+                            <li>Cards for <code>causes</code> and <code>efforts</code> styled with hover effects</li>
+                            <li>Hero section styled with a <code>dark overlay</code> to improve text readability</li>
+                            <li>“Back to Top” button designed with CSS and enhanced using JavaScript</li>
+                        </ul>
                         
+                    <p>These techniques ensure that the page is both functional and visually engaging while maintaining clean code structure.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>
+                            Accessibility was carefully considered in this content page to ensure all users can navigate and understand the information easily.
+                             All images include descriptive <code>alt</code> text, allowing screen readers to interpret visual content effectively. A clear heading structure
+                              using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> tags improves document organization for assistive technologies.
+                        </p>
+                        <p>
+                           The background color paired with dark text offers strong contrast, making content easier to read for visually impaired users. 
+                           Interactive elements like links and buttons are large and easily clickable, and the layout remains user-friendly on both desktop and mobile devices, enhancing overall accessibility for everyone.
+                        </p>
+                        
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="#">validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
                     <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="st_3-Content_page.html">Student 3 Content Page</a></p>
             </section>
 
-            <section>
+        
+            <section class="content" id="content">
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                <p>
+                    During the implementation process, several challenges were encountered. For example, integrating interactive elements like the rating system needed JavaScript debugging to ensure smooth user experience.
+                     These challenges were resolved by iterative testing, seeking community resources, and methodical problem-solving. The key lessons learned include the importance of planning for accessibility from the start, 
+                     writing clean code, and thorough testing on multiple browsers and devices.
+                </p>
             </section>
 
             <section>
-                <h2 id="compliance"> Compliance</h2>
+                <h2> Compliance</h2>
                     <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
 
                     
             </section>
 
             <section>
-                <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-                    <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-                    </ul>
+                <h2>References</h2><br>
+                
+                <div class="content" id="content">
+                    <p>
+                        Al Jazeera (2025) "Areas near Sudan's Khartoum at risk of famine, says UN agency", Al Jazeera, 10 June. Available at: <a href="https://www.aljazeera.com/news/2025/6/10/areas-near-sudans-khartoum-at-risk-of-famine-says-un-agency">
+                            https://www.aljazeera.com/news/2025/6/10/areas-near-sudans-khartoum-at-risk-of-famine-says-un-agency</a> [Accessed 1 July 2025].
+                    </p>
+
+                    <p>
+                        FAO (2025) "Two years since the start of the conflict, Sudan is facing a severe food security catastrophe", Food and Agriculture Organization Newsroom, 15 April. Available at: <a href="https://www.fao.org/newsroom/detail/two-years-since-the-start-of-the-conflict-sudan-is-facing/en">
+                            https://www.fao.org/newsroom/detail/two-years-since-the-start-of-the-conflict-sudan-is-facing/en</a> [Accessed 1 July 2025].
+                    </p>
+
+                    <p>
+                        Vatican News (2025) "Over half of Sudan's population faces growing food insecurity", Vatican News, 17 June. Available at: <a href="https://www.vaticannews.va/en/world/news/2025-06/more-than-half-of-sudans-population-faces-food-insecurity.html">
+                            https://www.vaticannews.va/en/world/news/2025-06/more-than-half-of-sudans-population-faces-food-insecurity.html</a> [Accessed 3 July 2025].
+                    </p>
+
+                    <p>
+                        WFP (2025a) "Famine in Sudan", World Food Programme, 10 June. Available at: <a href="https://www.wfp.org/emergencies/sudan ">https://www.wfp.org/emergencies/sudan </a>[Accessed 3 July 2025].
+                    </p>
+
+                    <p>
+                        WFP (2025b) "Refugees escaping Sudan face escalating hunger and malnutrition as food aid risks major reductions, World Food Programme, 30 June. Available at: <a href="https://www.wfp.org/news/refugees-escaping-sudan-face-escalating-hunger-and-malnutrition-food-aid-risks-major">
+                            https://www.wfp.org/news/refugees-escaping-sudan-face-escalating-hunger-and-malnutrition-food-aid-risks-major</a> [Accessed 3 July 2025].
+                    </p>
+
+                    <p>
+                        OHCHR (2025) "Sudan faces worsening humanitarian catastrophe as famine and conflict escalate: UN experts", Office of the United Nations High Commissioner for Human Rights, 14 April. Available at: <a href="https://www.ohchr.org/en/press-releases/2025/04/sudan-faces-worsening-humanitarian-catastrophe-famine-and-conflict-escalate">
+                            https://www.ohchr.org/en/press-releases/2025/04/sudan-faces-worsening-humanitarian-catastrophe-famine-and-conflict-escalate</a> [Accessed 3 July 2025].
+                    </p>
+                </div>
             </section>
 
             <p class="top"><a href="#top">Go top</a></p>
@@ -124,26 +222,26 @@
                 <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
                 <li>Student 1</li>
                     <ul> 
-                        <li><a href="#splash">Splash page</a></li>
-                        <li><a href="#volunteer">Volunteer page</a></li>
-                        <li><a href="#content">Content page</a></li>
+                        <li><a href="splash screen.html">Splash page</a></li>
+                        <li><a href="Volunteer.html">Volunteer page</a></li>
+                        <li><a href="st_1-Content_page.html">Content page</a></li>
                     </ul>
                 <li>Student 2</li>
                     <ul>
-                        <li><a href="#">Home page </a></li>
-                        <li><a href="#">Table page</a></li>
+                        <li><a href="Home.html">Home page </a></li>
+                        <li><a href="Table.html">Table page</a></li>
                         <li><a href="#">Content page</a></li>
                     </ul>
                 <li>Student 3</li>
                     <ul>
-                        <li><a href="#">Feedback page</a> </li>
-                        <li><a href="#">Team page</a></li>
-                        <li><a href="#">Content page</a></li>
+                        <li><a href="Feedback.html">Feedback page</a> </li>
+                        <li><a href="team.html">Team page</a></li>
+                        <li><a href="st_3-Content_page.html">Content page</a></li>
                     </ul>
                 <li>Student 4</li>
                     <ul>
-                        <li><a href="#">Profile page </a></li>
-                        <li><a href="#">Sitemap page</a></li>
+                        <li><a href="user.html">Profile page </a></li>
+                        <li><a href="sitemap.html">Sitemap page</a></li>
                         <li><a href="#">Content page</a></li>
                     </ul>
                 <li><a href="#challenge">Challenges and Lessons Learned</a></li>
