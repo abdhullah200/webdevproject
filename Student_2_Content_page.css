@@ -1,360 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins',sans-serif;
-
-}
-
-body {
-  background-color: #E8E8D2;
-  padding-top: 60px;
-}
-
-
-
-
-nav {
-  display: flex;
-  padding: 2% 6%;
-  justify-content: space-between;
-  align-items: center;
-  height: 25px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  background: rgba(232,232,210,0.18); 
-  z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-sizing: border-box;
-}
-
-.nav-left {
-  width: 150px;  
-}
-
-.nav-links {
-  flex: 1;
-  text-align: center;
-}
-
-.nav-links ul li {
-  font-weight: bold;
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-}
-
-.nav-links ul li::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  background: #8B4513;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
-}
-
-.nav-links ul li:hover::after {
-  width: 100%;
-}
-
-.nav-links ul li a {
-  color: #1A2237;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.nav-links ul li a:hover {
-  color: #8B4513;
-}
-
-.nav-links ul li a.active {
-  color: #8B4513;
-}
-
-.account-icon img {
-  width: 35px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.account-icon img:hover {
-  transform: scale(1.1);
-}
-/* ============ Make all 4 help cards stay in one line on large screens ============ */
-@media (min-width: 1100px) {
-  .help-options {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-
-  .help-card {
-    flex: 1 1 22%; /* Four cards = 25% minus spacing */
-    max-width: none; /* Prevent max-width limit from wrapping */
-  }
-}
-
-.hero {
-  position: relative;
-  background-image: url('./assets/sudan-hunger.jpg'); /* ✅ Add your image here */
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  z-index: 1;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Darkness overlay */
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-}
-
-.hero-content h1{
-    font-size: 100px;
-}
-
-.hero-content p{
-    font-size: 30px;
-}
-
-.hero-content a{
-  position: relative;
-  font-weight: bold;
-  top: 30px; 
-  padding: 15px 30px;
-  background-color: white;
-  color: white;
-  border-radius: 20px;
-  background: transparent;
-  border: solid 3px white;
-  text-decoration: none;
-}
-.hero-content a:hover{
-  background-color: white;
-  color: black;
-  font-weight: bold;
-}
-
-
-.hunger-situation {
-  padding: 60px 20px;
-  background-color: #E8E8D2;
-  text-align: center;
-}
-
-.hunger-situation h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.facts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.fact-card {
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 25px;
-  max-width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.fact-card:hover {
-  transform: translateY(-5px);
-}
-
-.fact-card h3 {
-  color: #d35400;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.fact-card p {
-  font-size: 1rem;
-  color: #555;
-}
-
-
-.causes {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.causes h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #2c3e50;
-}
-
-.cause-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.cause-card {
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  padding: 25px;
-  width: 280px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.cause-card:hover {
-  transform: translateY(-5px);
-}
-
-.cause-card img {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-}
-
-.cause-card h3 {
-  font-size: 1.2rem;
-  color: #d35400;
-  margin-bottom: 10px;
-}
-
-.cause-card p {
-  font-size: 0.95rem;
-  color: #444;
-}
-
-
-
-.efforts {
-  padding: 60px 20px;
-  max-width: 900px; /* bigger than card width */
-  margin: 0 auto;
-  color: #333;
-
-}
-
-.efforts h2 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center; /* center cards horizontally */
-}
-
-.effort-card {
-  background-color: #f2f2f2;
-  border-radius: 15px;
-  padding: 30px 25px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  min-height: 50px;
-  width: 100%;          /* take full container width */
-  max-width: 800px;     /* limit max width */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.effort-card h3{
-  color: #d35400;
-  margin-bottom: 10px;
-}
-
-
-
-
-.solutions {
+.references {
   padding: 60px 20px;
   width: 80%;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   color: #333;
   text-align: left;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 40px;
 }
 
-.solutions h2 {
+.references h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #1A2237;
   margin-bottom: 35px;
 }
 
-.solutions p {
-  color: #1A2237;
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  margin-bottom: 25px;
-  text-align: justify;
+.reference-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.about-sudan {
-  position: relative;
-  top: 20px;
-  border: solid 2px #1A2237;
+.reference-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #1A2237;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.reference-item:hover {
+  transform: translateX(5px);
+}
+
+.reference-item p {
   color: #1A2237;
-  padding: 12px 50px;
-  border-radius: 25px;
-  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.reference-item a {
+  color: #2E7D32;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.about-sudan:hover {
-  color: #A0522D;
-  border: solid 2px #A0522D;
-}
-
-
-
-
-#backToTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  background-color: #1A2237;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 5px 15px;
-  cursor: pointer;
-  display: none; /* hidden by default */
-  transition: opacity 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#backToTop:hover {
-  background-color: #a84300;
+.reference-item a:hover {
+  color: #1B5E20;
+  text-decoration: underline;
 }
