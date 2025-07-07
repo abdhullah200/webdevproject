@@ -38,6 +38,11 @@ nav {
   width: 150px;  
 }
 
+.nav-left img {
+  width: 40px;
+  margin-left: 25px;
+}
+
 .nav-links {
   flex: 1;
   text-align: center;
